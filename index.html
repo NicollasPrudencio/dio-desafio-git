@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Colorful Text Animation - Just for fun</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			outline: none;
+		}
+		body{
+			font-family: Open sans, sans-serif;
+			overflow-x: hidden;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			height: 100vh;
+			background: #000 url(images/top.png) no-repeat;
+			background-position: 100px -250px;
+			background-size: contain;
+		}
+		.wrapper{
+			text-align: center;
+		}
+		h1{
+			font-size: 150px;
+			font-weight: 900;
+			text-transform: uppercase;
+			background: url(images/bg.png) repeat;
+			background-size: cover;
+			background-position: bottom;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			animation: mymove linear 20s infinite;
+		}
+		@keyframes mymove{
+			0%{
+				background-position: 0 1000px;
+			}
+		}
+		h2{
+			font-size: 45px;
+			letter-spacing: 15px;
+			text-transform: uppercase;
+			background: url(images/bg.png) repeat;
+			background-size: cover;
+			background-position: bottom;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			animation: mymoveTwo linear 5s infinite;
+		}
+		@keyframes mymoveTwo{
+			0%{
+				background-position: -1000px 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	
+
+<div class="wrapper">
+	<h1>Bem-vindo(a)!</h1>
+	<h2>Este é apenas um conteúdo para o desafio do Git! :D</h2>
+</div>
+
+
+</body>
+</html>
